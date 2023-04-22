@@ -30,8 +30,6 @@ function App() {
   }
 
   const handleClickHouse = selectdHouse => {
-    console.log("clique")
-    console.log(selectdHouse)
     setHouse(selectdHouse)
   }
 
