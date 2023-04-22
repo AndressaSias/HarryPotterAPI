@@ -1,0 +1,26 @@
+#pagination{
+    display: flex;
+    justify-content: center;
+
+    .btn-page {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        margin: 0 5px;
+        background: #FFFFFF;
+        border: none;
+        -webkit-transition: background-color 1s;
+        transition: background-color 1s;
+        font-weight: bold;
+
+        &.active {
+            background: $RED;
+            color:$WHITE;
+        }
+
+        &:hover {
+            background: $RED;
+            color:$WHITE;
+        }
+    }
+}

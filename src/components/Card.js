@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react";
 import Chapeu from '../assets/img/chapeu-de-bruxa.png'
 
-function Card(props) {
+function Card({personagem}) {
   return (
     <div className="card">
       <div className="foto">
         <img
-          src={props.personagem.image ? props.personagem.image : Chapeu}
-          alt={props.personagem.name}
+          src={personagem.image ? personagem.image : Chapeu}
+          alt={personagem.name}
         />
       </div>
       <div className="infos">
-        <h2>{props.personagem.name}</h2>
-        <p>Nascimento: {props.personagem.dateOfBirth}</p>
-        <p>Casa: {props.personagem.house}</p>
-        <p>Patrono: {props.personagem.patronus}</p>
-        <p>Ator: {props.personagem.actor}</p>
-        <p>Está vivo: {props.personagem.alive ? "Sim" : "Não"}</p>
+        <h2>{personagem.name}</h2>
+        <p>Nascimento: {personagem.dateOfBirth}</p>
+        <p>Casa: {personagem.house}</p>
+        <p>Patrono: {personagem.patronus}</p>
+        <p>Ator: {personagem.actor}</p>
+        <p>Está vivo: {personagem.alive ? "Sim" : "Não"}</p>
       </div>
     </div>
   );

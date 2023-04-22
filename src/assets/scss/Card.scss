@@ -10,6 +10,23 @@
         transform: scale(1.1)
     }
 
+    @media #{$BREAKPOINT-TABLET-LAND}{
+        height: 450px;
+    }
+
+    @media #{$BREAKPOINT-TABLET}{
+        width: 32%;
+    }
+
+    @media #{$BREAKPOINT-MOBILE-LAND}{
+        width: 48%;
+    }
+
+    @media #{$BREAKPOINT-MOBILE}{
+        width: 98%;
+        height: 530px;
+    }  
+
     .foto{
         height: 68%;
         position: relative;
@@ -20,6 +37,14 @@
             width: 100%;
             object-fit: cover;
         }
+
+        @media #{$BREAKPOINT-TABLET-LAND}{
+            height: 60%;
+        }  
+        
+        @media #{$BREAKPOINT-MOBILE}{
+            height: 70%;
+        }  
     }
 
     .infos{

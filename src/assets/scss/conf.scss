@@ -12,18 +12,24 @@ $WHITE: #FFFFFF;
 
 // Usage example:  @media #{$BREAKPOINT-DESK}
 
-$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
-$BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
-$BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
-$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 480px)";
+$BREAKPOINT-TABLET-LAND: "only screen and (max-width: 1280px)";
+$BREAKPOINT-TABLET: "only screen and (max-width: 975px)";
+$BREAKPOINT-MOBILE-LAND: "only screen and (max-width: 600px)";
+$BREAKPOINT-MOBILE: "only screen and (max-width: 400px)";
 
 /*|---------------|MIXINS|---------------*/
 
 @mixin margin-page {
     width: calc(100% - 30px);
     margin: 0 auto;
-  
-    @media #{$BREAKPOINT-DESK} {
-      max-width: 1200px;
-    }
+    padding: 50px 0;
+    max-width: 1200px;
+
+    @media #{$BREAKPOINT-TABLET} {
+      max-width: 980px;
+    }    
+
+    @media #{$BREAKPOINT-MOBILE-LAND} {
+      padding: 30px 0;
+    }    
 }

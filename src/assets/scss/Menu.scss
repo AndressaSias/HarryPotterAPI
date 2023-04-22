@@ -2,11 +2,27 @@
     background: $RED;
     text-align: center;
     padding: 10px 0;
+
+    @media #{$BREAKPOINT-MOBILE-LAND}{
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }  
+
     img{
         height: 50px;
+
+        @media #{$BREAKPOINT-MOBILE-LAND}{
+            height: 30px;
+        } 
     }
 
     h1{
         color: $WHITE;
+
+        @media #{$BREAKPOINT-MOBILE-LAND}{
+            font-size: 1.5em;
+        }
     }
 }
