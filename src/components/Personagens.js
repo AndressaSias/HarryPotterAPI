@@ -9,7 +9,7 @@ const Personagens = ({personagens, page, house}) => {
         selectedPerson = personagens.filter(personagem => personagem.house == house)
     }
     return (
-      <div id="cards">
+      <div id="personagens">
         {selectedPerson.map((personagem) => (
           <Card personagem={personagem} key={personagem.id} />
         ))}

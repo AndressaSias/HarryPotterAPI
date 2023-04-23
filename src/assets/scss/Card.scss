@@ -51,6 +51,11 @@
         h2{
             text-align: center;
             margin: 5px 0;
+
+            @media #{$BREAKPOINT-TABLET}{
+                font-size: 1.2em;
+            }
+            
         }
 
         p{
